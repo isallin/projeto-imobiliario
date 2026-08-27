@@ -1,11 +1,11 @@
-import { Cadastro } from "./pages/cadastro"
-
+import { Cadastro } from "./pages/Cadastro"
+import styles from "./style.module.css"
 
 function App() {
   return (
-    <div>
-      <Cadastro />
-    </div>
+    <>
+      <Cadastro/>
+    </>
   )
 }
 

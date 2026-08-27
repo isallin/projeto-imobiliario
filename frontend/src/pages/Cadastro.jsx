@@ -1,15 +1,16 @@
 import { HeaderCadastro } from "../componentes/HeaderCadastro"
 import { FormularioCadastro } from "../componentes/FormularioCadastro"
+import { SubmitCadastro } from "../componentes/SubmitCadastro"
+import styles from "../style.module.css"
 
-export function Cadastro(){
-    return(
-        <div>
-            <main>
-                <section>
-                    <HeaderCadastro/>
-                    <FormularioCadastro/>
-                </section>
-            </main>
-        </div>
+export function Cadastro() {
+    return (
+        <main className={styles.container}>
+            <section className={styles.formcard}>
+                <HeaderCadastro />
+                <FormularioCadastro />
+                <SubmitCadastro />
+            </section>
+        </main>
     )
 }
