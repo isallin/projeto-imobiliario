@@ -15,3 +15,14 @@ export async function inserirImovel(imovel) {
 
     return response
 }
+
+// export function Requisicao(){
+//     function inserir(imovel){
+//         axios.get("http://localhost:8080")
+//         .then(
+//             resposta=>{
+//                 set
+//             }
+//         )
+//     }
+// }

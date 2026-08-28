@@ -1,6 +1,7 @@
 import styles from "../style.module.css"
 import { useState } from "react"
 import { inserirImovel } from "../services/imovelApi"
+import { SubmitCadastro } from "./SubmitCadastro"
 
 export function FormularioCadastro() {
     const TIPO_IMOVEL = ["Casa", "Apartamento", "Terreno", "Imóvel Comercial"]
@@ -67,7 +68,6 @@ export function FormularioCadastro() {
             tipo: formData.get("tipoimovel"),
             finalidade: formData.get("finalidade"),
             endereco: formData.get("endereco"),
-            bairro: formData.get("bairro"),
             cidade: formData.get("cidade"),
             area: Number(formData.get("area")),
             valor: Number(formData.get("valor")),
@@ -85,7 +85,7 @@ export function FormularioCadastro() {
     }
 
     return (
-        <form onSubmit={cadastrar}>
+        <form onSubmit={cadastrar()}>
             <div className={styles.formgrid}>
                 <CamposSelect
                     titulo={"Tipo de imóvel"}
@@ -115,6 +115,8 @@ export function FormularioCadastro() {
                     minimo={"0"}
                     step={"0.01"} />
             </div>
+            <SubmitCadastro/>
+            {mensagem && <p role="status">{mensagem}</p>}
         </form>
     )
 }

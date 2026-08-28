@@ -2,21 +2,21 @@ package school.sptech.backend;
 
 public class Imovel {
     private Integer id;
-    private String TipoImovel;
-    private String Finalidade;
-    private String Endereco;
-    private String Cidade;
-    private Integer Area;
-    private Double Valor;
+    private String tipoimovel;
+    private String finalidade;
+    private String endereco;
+    private String cidade;
+    private Integer area;
+    private Double valor;
 
-    public Imovel(Integer id, String tipoImovel, String finalidade, String endereco, String cidade, Integer area, Double valor) {
+    public Imovel(Integer id, String tipoimovel, String finalidade, String endereco, String cidade, Integer area, Double valor) {
         this.id = id;
-        TipoImovel = tipoImovel;
-        Finalidade = finalidade;
-        Endereco = endereco;
-        Cidade = cidade;
-        Area = area;
-        Valor = valor;
+        this.tipoimovel = tipoimovel;
+        this.finalidade = finalidade;
+        this.endereco = endereco;
+        this.cidade = cidade;
+        this.area = area;
+        this.valor = valor;
     }
 
     public Imovel() {
@@ -30,51 +30,51 @@ public class Imovel {
         this.id = id;
     }
 
-    public String getTipoImovel() {
-        return TipoImovel;
+    public String getTipoimovel() {
+        return tipoimovel;
     }
 
-    public void setTipoImovel(String tipoImovel) {
-        TipoImovel = tipoImovel;
+    public void setTipoimovel(String tipoimovel) {
+        this.tipoimovel = tipoimovel;
     }
 
     public String getFinalidade() {
-        return Finalidade;
+        return finalidade;
     }
 
     public void setFinalidade(String finalidade) {
-        Finalidade = finalidade;
+        this.finalidade = finalidade;
     }
 
     public String getEndereco() {
-        return Endereco;
+        return endereco;
     }
 
     public void setEndereco(String endereco) {
-        Endereco = endereco;
+        this.endereco = endereco;
     }
 
     public String getCidade() {
-        return Cidade;
+        return cidade;
     }
 
     public void setCidade(String cidade) {
-        Cidade = cidade;
+        this.cidade = cidade;
     }
 
     public Integer getArea() {
-        return Area;
+        return area;
     }
 
     public void setArea(Integer area) {
-        Area = area;
+        this.area = area;
     }
 
     public Double getValor() {
-        return Valor;
+        return valor;
     }
 
     public void setValor(Double valor) {
-        Valor = valor;
+        this.valor = valor;
     }
 }

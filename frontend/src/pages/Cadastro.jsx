@@ -1,6 +1,5 @@
 import { HeaderCadastro } from "../componentes/HeaderCadastro"
 import { FormularioCadastro } from "../componentes/FormularioCadastro"
-import { SubmitCadastro } from "../componentes/SubmitCadastro"
 import styles from "../style.module.css"
 
 export function Cadastro() {
@@ -9,7 +8,6 @@ export function Cadastro() {
             <section className={styles.formcard}>
                 <HeaderCadastro />
                 <FormularioCadastro />
-                <SubmitCadastro />
             </section>
         </main>
     )
